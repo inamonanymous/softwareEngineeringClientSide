@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Sansation&display=swap');
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #88151A;
+  --accent-color: #000000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header > div,
+section > div,
+footer > div {
+  max-width: 1440px;
+  margin: auto;
+} 
+
+h1, h2 {font-family: 'Sansation', 'sans-serif'; font-weight: 500;}
+h3, h4, h5, h6, body {font-family: 'Sansation Light', 'sans-serif'; font-weight: 300;}
+h1 {font-size: 100px;line-height: 1.12em; }
+
+h2 {font-size: 80px;line-height: 0.9em;}
+
+h3 {font-size: 80px;line-height: 0.9em;}
+
+h4 {font-size: 60px;line-height: 0.67em;}
+
+h5 {font-size: 50px;line-height: 0.45em;}
+
+h6 {font-size: 40px;}
+
+body {font-size: 32px;}
+
+header > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0 30px;
+}
+
+header > div > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  max-width: 685px;
+  gap: 120px;
+}
+
+header a {
+  text-decoration: none;
+  color: var(--accent-color);
+  cursor: pointer;
+}
+
+header a:hover {
+  border-bottom: 2px solid var(--secondary-color); /* Change the underline color on hover */
+}
+
+#bannerSection {
+  background: linear-gradient(to bottom, #ffffff, #88151A);
+}
+
+#bannerSection > div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+}
+
+#bannerSection > div > div{
+  display: flex;
+  flex-direction: column;
+  max-width: 720px;
+  gap: 65px;
+  
+}
+
+#dashboardSection {
+  background: linear-gradient(to top, #ffffff, #88151A);
+}
+
+#dashboardSection > div{
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0 300px;
+  gap: 245px;
+}
+
+#dashboardSection > div .row1,
+#dashboardSection > div .row2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#dashboardSection .smallBox {
+  max-width: 385px;
+  width: 100%;
+  border-radius: 50px;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+  padding: 18px 20px 55px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+#dashboardSection .bigBox{
+  max-width: 425px;
+  width: 100%;
+  
+  color: var(--secondary-color);
+  background-color: var(--primary-color); 
+  border-radius: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  padding: 60px 40px 185px;
+}
+
+#borrowSection {
+  padding: 140px 0 225px;
+  background: linear-gradient(to bottom, #ffffff, #88151A);
+}
+
+#borrowSection > div{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 110px;  
+}
+
+#selectItemForm {
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+  padding: 70px 100px 75px;
+  background: linear-gradient(to bottom, #ffffff, #88151A);
+  display: flex;
+  flex-direction: column;
+}
+
+#selectItemForm > ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 635px;
+  list-style-type: none;
+  align-items: end;
+}
+
+#selectItemForm > form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  gap: 60px;
+}
+#selectItemForm > form > div{
+  padding-right: 60px;
+  background-color: rgba(135, 22, 26, 0.30);
+  display: flex;
+}
+
+#selectItemForm > form div > input{
+  width: 100%;
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0);
+  border-width: 0;
+  font-size: 30px;
+}
+
+#selectItemForm > form > ul {
+  list-style-type: none;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+#selectItemForm > form > ul > li{
+  border-width: 0;
+  box-shadow: 0 4px 4px rgb(255, 255, 255);
+  border-radius: 12px;
+  padding: 30px 65px 30px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#selectItemForm > form > ul > li > p > span {
+  border-radius: 100%;
+  background: white;
+  color: black;
+  padding: 25px 30px 25px;
+}
+
+#selectItemForm > form > ul > li > div{
+  display: flex;
+  gap: 20px;
+}
+
+#selectItemForm > form > ul > li > div > a {
+  border-radius: 24px;
+  background: #D9D9D9;
+  padding: 25px 25px 20px;
+  cursor: pointer;
+}
+
+#selectItemForm > form > button {
+  width: fit-content;
+  padding: 30px 115px;
+  background-color: var(--primary-color);
+  font-weight: 300;
+  border-radius: 12px;
+  box-shadow: 0 4px 4px rgba(255, 255, 255, 1);
+  border: none;
+  cursor: pointer;
+}
+
+#aboutSection {
+  padding: 140px 0 225px;
+  background: linear-gradient(to top, #ffffff, #88151A); 
+  text-align: center;
+}
+
+#aboutSection > div {
+  padding: 200px 0 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+}
+
+#aboutSection > div div {
+  text-align: center;
+}
+
+#aboutSection > div div > img{
+  border-radius: 50%;
+  max-width: 125px;
+  width: 100%;
+}
+
+#aboutSection > div div > p:nth-of-type(1){
+  font-size: 20px;
+  padding: 65px 0 65px;
+  font-style:italic ;
+}
+
+#aboutSection > div div > h6 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#aboutSection > div div > p:nth-of-type(2){
+  font-size: 16px;
+}
+
+footer {
+  background: linear-gradient(to bottom, #ffffff, #88151A); 
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-position: center center;
+}
+
+footer > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 0 30px;
+}
+
+footer > div > ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+  max-width: 685px;
+  gap: 120px;
+}
+
+footer a {
+  text-decoration: none;
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+footer a:hover {
+  border-bottom: 2px solid var(--accent-color); /* Change the underline color on hover */
+}
